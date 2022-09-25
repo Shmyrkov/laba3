@@ -34,7 +34,7 @@ public:
     SegmentState(int begin_s0, int end_s0) : begin_s0(begin_s0), end_s0(end_s0) { }
 
     bool contains(int s) const {
-        return s >= end_s0 and s <= end_s0;
+        return s >= begin_s0 and s <= end_s0;
     }
 };
 
